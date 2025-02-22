@@ -1,0 +1,89 @@
+/* styles normalization */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+body {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #111;
+  scroll-behavior: smooth;
+}
+input,
+textarea,
+button,
+select {
+  font: inherit;
+  color: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+}
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* common styles */
+body {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+:root {
+  --color-substrate-focus: #0d0404;
+  --color-substrate-short: #040d06;
+  --color-substrate-long: #04090d;
+
+  --color-header-focus: rgba(255, 76, 76, 0.15);
+  --color-header-focus-border: #fff2f2;
+
+  --color-header-short: rgba(77, 218, 110, 0.15);
+  --color-header-short-border: #f2fff5;
+
+  --color-header-long: rgba(76, 172, 255, 0.15);
+  --color-header-long-border: #f2f9ff;
+
+  --color-button-main-focus: rgba(255, 76, 76, 0.71);
+  --color-button-aside-focus: rgba(255, 76, 76, 0.15);
+
+  --color-button-main-short: rgba(77, 218, 110, 0.62);
+  --color-button-aside-short: rgba(77, 218, 110, 0.15);
+
+  --color-button-main-long: rgba(76, 172, 255, 0.62);
+  --color-button-aside-long: rgba(76, 172, 255, 0.15);
+}
