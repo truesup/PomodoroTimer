@@ -33,7 +33,7 @@ function App() {
     <div className={`${styles.appWrapper} ${modeBg[currentMode]}`}>
       <CurrentMode currentMode={currentMode} />
       <Timer />
-      <ControlButtons onNextMode={handleNextMode} />
+      <ControlButtons onNextMode={handleNextMode} currentMode={currentMode} />
     </div>
   )
 }
