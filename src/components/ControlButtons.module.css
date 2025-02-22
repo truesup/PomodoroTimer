@@ -30,3 +30,26 @@
 .asideButton.longBg {
   background-color: var(--color-button-aside-long);
 }
+svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainIcon.focusColor {
+  fill: var(--color-icon-main-focus);
+}
+.mainIcon.shortColor {
+  fill: var(--color-icon-main-short);
+}
+.mainIcon.longColor {
+  fill: var(--color-icon-main-long);
+}
+.asideIcon.focusColor {
+  fill: var(--color-icon-aside-focus);
+}
+.asideIcon.shortColor {
+  fill: var(--color-icon-aside-short);
+}
+.asideIcon.longColor {
+  fill: var(--color-icon-aside-long);
+}

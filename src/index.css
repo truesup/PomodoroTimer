@@ -86,4 +86,13 @@ body {
 
   --color-button-main-long: rgba(76, 172, 255, 0.62);
   --color-button-aside-long: rgba(76, 172, 255, 0.15);
+
+  --color-icon-main-focus: #fff2f2;
+  --color-icon-aside-focus: #ffd9d9;
+
+  --color-icon-main-short: #f2fff5;
+  --color-icon-aside-short: #d9fae1;
+
+  --color-icon-main-long: #f2f9ff;
+  --color-icon-aside-long: #d9eeff;
 }
