@@ -2,24 +2,8 @@ import { useState } from 'react'
 import CurrentMode from './components/CurrentMode'
 import Timer from './components/Timer'
 import ControlButtons from './components/ControlButtons'
+import { modes, modeBg } from './constants/modeStyles'
 import styles from './App.module.css'
-
-const modes = [
-  'Focus',
-  'Short Break',
-  'Focus',
-  'Short Break',
-  'Focus',
-  'Short Break',
-  'Focus',
-  'Long Break',
-]
-
-const modeBg = {
-  Focus: styles.focusBg,
-  'Short Break': styles.shortBg,
-  'Long Break': styles.longBg,
-}
 
 function App() {
   const [modeIndex, setModeIndex] = useState(0)
@@ -33,7 +17,7 @@ function App() {
     <div className={`${styles.appWrapper} ${modeBg[currentMode]}`}>
       <CurrentMode currentMode={currentMode} />
       <Timer />
-      <ControlButtons onNextMode={handleNextMode} currentMode={currentMode} />
+      <ControlButtons currentMode={currentMode} onNextMode={handleNextMode} />
     </div>
   )
 }
